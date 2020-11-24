@@ -34,18 +34,14 @@
 </template>
 
 <script>
-import { toRefs } from "vue";
-import { createRouter } from "vue-router";
-
 export default {
   props: {
     isActive: Boolean
   },
-  setup(props, context) {
-    function openGame() {
+  methods: {
+    openGame() {
       this.$router.push({ name: "game-page" });
     }
-    return { ...toRefs(props), openGame };
   }
 };
 </script>
