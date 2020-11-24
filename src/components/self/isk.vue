@@ -1,20 +1,12 @@
 <template>
   <div>
-    <isk></isk>
-    <hand></hand>
+    ISK: 222
   </div>
 </template>
 
 <script>
-import Hand from "./hand";
-import Isk from "./isk";
-
 export default {
-  name: "Self",
-  components: {
-    Hand,
-    Isk
-  },
+  name: "SelfIsk",
   data: () => ({}),
   computed: {},
   methods: {}
