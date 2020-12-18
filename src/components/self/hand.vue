@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <button class="button is-white">Card-1</button>
-    <button class="button is-light">Card-2</button>
+  <div class="container overflow-hidden py-4">
+    <button class="transform -rotate-12 w-2/4 rounded-xl focus:outline-none ">
+      <img src="@/assets/card-images/ambassador.jpg" />
+    </button>
+    <button class="transform rotate-12 w-2/4 rounded-xl focus:outline-none ">
+      <img src="@/assets/card-images/assassin.jpg" />
+    </button>
   </div>
 </template>
 

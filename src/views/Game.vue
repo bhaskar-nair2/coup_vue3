@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container h-screen w-screen">
     <Self ref="self"></Self>
     <Table ref="table"></Table>
     <Turn ref="turn"></Turn>

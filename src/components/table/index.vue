@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container w-screen">
     <pause></pause>
-    <tableui></tableui>
+    <tableui class="absolute top-1/4"></tableui>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <isk></isk>
-    <hand></hand>
+  <div class="container flex justify-center align-center">
+    <isk class="absolute top-5 left-5"></isk>
+    <hand class="absolute bottom-10"></hand>
   </div>
 </template>
 
