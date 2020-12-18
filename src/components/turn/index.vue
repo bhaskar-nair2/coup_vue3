@@ -1,6 +1,6 @@
 <template>
   <div id="turn">
-    <div class="is-flex is-flex-direction-column">
+    <div class="">
       <moves></moves>
     </div>
   </div>

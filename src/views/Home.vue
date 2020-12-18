@@ -1,22 +1,18 @@
 <template>
-  <div class="home">
-    <CreateTableModal
-      :is-active="showCreateTable"
-      @close-modal="showCreateTable = false"
-    ></CreateTableModal>
-    <aside class="menu options-menu">
-      <ul class="menu-list mx-5">
-        <li class="mb-3">
-          <a @click="launchCreateTableModal">Create a Table</a>
-        </li>
-        <li class="mb-3"><a @click="option">Join a Table</a></li>
-        <li><a @click="option">Settings</a></li>
-      </ul>
-    </aside>
-
+  <div class="container">
+    <div
+      class="container absolute bottom-20 mx-auto bg-gray-100 bg-opacity-20 z-10"
+    >
+      <div class="flex flex-col mx-10">
+        <HomeBtn> Create a Table </HomeBtn>
+        <HomeBtn> Join Table </HomeBtn>
+        <HomeBtn> Settings </HomeBtn>
+      </div>
+    </div>
+    <CreateTableModal></CreateTableModal>
     <img
       alt="Coup background"
-      class="bg-image"
+      class="fixed w-max h-screen z-0"
       src="../assets/card-images/base.jpg"
     />
   </div>
@@ -25,10 +21,12 @@
 <script>
 import { ref } from "vue";
 
-import CreateTableModal from "@/components/CreateTableModal.vue";
+import HomeBtn from "@/components/home/homeBtn.vue";
+import CreateTableModal from "@/components/home/CreateTable.vue";
 
 export default {
   components: {
+    HomeBtn,
     CreateTableModal
   },
   setup() {
@@ -36,13 +34,7 @@ export default {
       console.log(11);
     }
 
-    var showCreateTable = ref(false);
-
-    function launchCreateTableModal() {
-      showCreateTable.value = true;
-    }
-
-    return { option, showCreateTable, launchCreateTableModal };
+    return { option };
   }
 };
 </script>
@@ -55,10 +47,5 @@ export default {
   top: 0;
   left: 0;
   z-index: -1;
-}
-.options-menu {
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
 }
 </style>
