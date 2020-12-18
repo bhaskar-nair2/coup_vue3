@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-screen w-screen">
+  <div class="container h-screen w-screen overflow-hidden">
     <Self ref="self"></Self>
     <Table ref="table"></Table>
     <Turn ref="turn"></Turn>

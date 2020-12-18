@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-screen w-screen bg-gray-100">
+  <div class="container h-screen w-screen bg-gray-100 overscroll-none">
     <router-view />
   </div>
 </template>

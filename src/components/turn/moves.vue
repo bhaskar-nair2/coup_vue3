@@ -1,14 +1,17 @@
 <template>
-  <div class="space-x-4 ...">
-    <div class="inline-block box-content h-10 w-10 p-4 border-2">1</div>
-    <div class="inline-block bg-purple-600 p-4">2</div>
-    <div class="inline-block bg-purple-600 p-4">3</div>
+  <div class="container w-screen">
+    <MoveBtn class="absolute bottom-24"></MoveBtn>
   </div>
 </template>
 
 <script>
+import MoveBtn from "./_moveBtn";
+
 export default {
   name: "Moves",
+  components: {
+    MoveBtn
+  },
   data: () => ({}),
   computed: {},
   methods: {}

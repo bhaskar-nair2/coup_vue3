@@ -1,11 +1,13 @@
 <template>
-  <div class="container flex justify-center align-center m-4">
-    <img
-      v-for="n in 6"
-      :key="n"
-      :class="`absolute h-20`"
-      src="@/assets/svg/hexagonal.svg"
-    />
+  <div class="container">
+    <div class="flex">
+      <img
+        v-for="n in 6"
+        :key="n"
+        :class="`absolute h-20`"
+        src="@/assets/svg/hexagonal.svg"
+      />
+    </div>
   </div>
 </template>
 

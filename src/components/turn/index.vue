@@ -1,8 +1,6 @@
 <template>
-  <div id="turn">
-    <div class="">
-      <moves></moves>
-    </div>
+  <div class="container flex justify-center align-center z-20">
+    <moves class=""></moves>
   </div>
 </template>
 
@@ -18,8 +16,4 @@ export default {
 };
 </script>
 
-<style>
-#turn {
-  z-index: 100;
-}
-</style>
+<style></style>
